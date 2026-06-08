@@ -1,10 +1,3 @@
-"""
-References:
-- Cochran (1977): Sampling Techniques, 3rd Edition
-- Thompson (2012): Sampling, 3rd Edition  
-- Neyman (1934): On the Two Different Aspects of the Representative Method
-"""
-
 from __future__ import annotations
 
 from dataclasses import dataclass

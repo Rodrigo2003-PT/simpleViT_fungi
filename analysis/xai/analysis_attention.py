@@ -1,10 +1,5 @@
 """
 analysis_attention.py
-
-Implements stratified spatial attention analysis following:
-- Cochran (1977): Sampling Techniques
-- Neyman (1934): On the Two Different Aspects of the Representative Method
-- Thompson (2012): Sampling, 3rd Edition
 """
 
 from __future__ import annotations
@@ -351,8 +346,8 @@ def run_rollout_population_analysis(
     gini_all = metrics["gini_coefficients"]
     entropy_all = metrics["spatial_entropies"]
     
-    print(f"  ✓ Gini coefficients: {gini_all.shape}")
-    print(f"  ✓ Spatial entropies: {entropy_all.shape}")
+    print(f"  Gini coefficients: {gini_all.shape}")
+    print(f"  Spatial entropies: {entropy_all.shape}")
     
     # Compute group statistics
     aggregator = SpatialMetricsAggregator()
@@ -444,7 +439,7 @@ def run_rollout_population_analysis(
     with open(stats_path, "w") as f:
         json.dump(results, f, indent=2)
     
-    print(f"  ✓ Saved: {stats_path}")
+    print(f"  Saved: {stats_path}")
     
     # =========================================================================
     # STEP 4: Generate Distributional Boxplots (Requirement 2.1)
@@ -468,7 +463,7 @@ def run_rollout_population_analysis(
             ylabel="Gini Coefficient",
             title=f"Attention Focality Distribution | {args.split.upper()}",
         )
-        print(f"  ✓ Saved: rollout_gini_distribution_{args.split}.png")
+        print(f"  Saved: rollout_gini_distribution_{args.split}.png")
     
     # Entropy boxplot
     entropy_dict = {}
@@ -485,7 +480,7 @@ def run_rollout_population_analysis(
             ylabel="Shannon Entropy (nats)",
             title=f"Attention Diffuseness Distribution | {args.split.upper()}",
         )
-        print(f"  ✓ Saved: rollout_entropy_distribution_{args.split}.png")
+        print(f"  Saved: rollout_entropy_distribution_{args.split}.png")
     
     # =========================================================================
     # STEP 5: Select Stratified Representatives (Requirement 3.3)
@@ -555,7 +550,7 @@ def run_rollout_population_analysis(
                 save_name=save_name,
                 show=False,
             )
-            print(f"    ✓ {save_name}")
+            print(f"    {save_name}")
     
     # =========================================================================
     # STEP 7: Compute Integrated Gradients for Representatives

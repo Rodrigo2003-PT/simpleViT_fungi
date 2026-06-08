@@ -1,11 +1,5 @@
 """
 embeddings.py
-
-Embedding Space Analysis
-
-References (as in original header):
-- Good (2005): Permutation, Parametric and Bootstrap Tests
-- Cameron & Miller (2015): Cluster-Robust Inference in Practice
 """
 
 from __future__ import annotations
@@ -98,7 +92,7 @@ class EmbeddingAnalyzer:
             verbose=True,
         )
         projection = reducer.fit_transform(embeddings)
-        print(" ✓ Complete")
+        print(" Complete")
         return projection
 
     # -----------------------------
@@ -354,7 +348,7 @@ class EmbeddingAnalyzer:
         else:
             plt.close()
 
-        print(f"✓ Saved: {save_path}")
+        print(f"Saved: {save_path}")
         return str(save_path)
 
     def analyze_embedding_quality(
@@ -395,6 +389,6 @@ class EmbeddingAnalyzer:
         print(f" Silhouette (GT): {silhouette_gt:.4f}")
         print(f" Silhouette (Pred): {silhouette_pred:.4f}")
         print(f" Accuracy: {accuracy:.4f}")
-        print(" ✓ Statistical classification complete (see above)")
+        print(" Statistical classification complete (see above)")
 
         return metrics

@@ -1,11 +1,5 @@
 """
 extractor.py
-
-References (as noted in your original file headers):
-- Voita et al. (2019): Analyzing Multi-Head Self-Attention
-- Abnar & Zuidema (2020): Quantifying Attention Flow
-- Chefer et al. (2021): Transformer Interpretability Beyond Attention
-- Sundararajan et al. (2017): Integrated Gradients
 """
 
 from __future__ import annotations

@@ -831,11 +831,11 @@ def create_slide_level_folds(
         if all_folds_valid:
             if verbose:
                 if retry_attempt > 0:
-                    print(f"\n✓ Valid splits found after {retry_attempt} "
+                    print(f"\n Valid splits found after {retry_attempt} "
                           f"{'retry' if retry_attempt == 1 else 'retries'} "
                           f"(effective_seed={current_seed})")
                 else:
-                    print(f"\n✓ Valid splits found on first attempt")
+                    print(f"\n Valid splits found on first attempt")
             
             metadata = {
                 'random_state_effective': current_seed,
@@ -1161,7 +1161,7 @@ def verify_data_splits(train_idx: List[int], val_idx: List[int],
     assert len(train_set & test_set) == 0, "Train/Test overlap detected!"
     assert len(val_set & test_set) == 0, "Val/Test overlap detected!"
     
-    print("✓ Data splits verified: No overlap detected")
+    print(" Data splits verified: No overlap detected")
     return True
 
 

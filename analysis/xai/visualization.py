@@ -1,10 +1,3 @@
-"""
-Visualization Module
-
-- Cochran (1977): Sampling Techniques
-- Neyman (1934): Representative Method
-"""
-
 from __future__ import annotations
 
 from pathlib import Path
@@ -651,5 +644,5 @@ def plot_metric_distributions_by_group(
     else:
         plt.close()
     
-    print(f"  ✓ Saved: {Path(save_path).name}")
+    print(f"  Saved: {Path(save_path).name}")
     return save_path

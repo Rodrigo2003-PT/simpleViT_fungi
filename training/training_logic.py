@@ -1059,7 +1059,7 @@ def determine_optimal_epochs(
         optimal = optimal_bounded
     
     if verbose:
-        print(f"\n✓ Train final model for {optimal} epochs")
+        print(f"\n Train final model for {optimal} epochs")
         print(f"{'='*70}\n")
     
     return optimal
