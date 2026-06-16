@@ -120,12 +120,9 @@ The physical slide is the **primary independent biological replicate**. All patc
 
 ## Data Availability
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20595139.svg)](https://doi.org/10.5281/zenodo.20595139)
+The high-fidelity brightfield microscopy dataset of *Candida albicans* and *Candida glabrata* is permanently archived and openly accessible via **Zenodo**.The repository houses the unadulterated raw TIFF acquisitions (61 slides). To precisely replicate the 60-slide experimental cohort, slide-level baseline metrics, and XAI manifold topologies reported in the paper, users must maintain strict biological isolation.
 
 **Access the dataset here:** [https://doi.org/10.5281/zenodo.20595139](https://doi.org/10.5281/zenodo.20595139)
-
-### Reproducibility Note
-The high-fidelity brightfield microscopy dataset of *Candida albicans* and *Candida glabrata* is permanently archived and openly accessible via **Zenodo**.The repository houses the unadulterated raw TIFF acquisitions (61 slides). To precisely replicate the 60-slide experimental cohort, slide-level baseline metrics, and XAI manifold topologies reported in the paper, users must maintain strict biological isolation.
 
 ### Data Format
 
