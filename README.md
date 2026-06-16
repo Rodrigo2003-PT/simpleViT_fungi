@@ -755,8 +755,6 @@ If you use this code, dataset, or methodology in your research, please cite:
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
-The dataset, when released, will be distributed under a separate open-access data licence to be specified at time of release.
-
 ---
 
 ## Acknowledgements
