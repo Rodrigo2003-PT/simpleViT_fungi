@@ -118,9 +118,14 @@ The class-stratified permutation test (B = 1,000) on the UMAP manifold rejects t
 
 The physical slide is the **primary independent biological replicate**. All patches from a single slide are assigned exclusively to either the training or test partition. The individual FOV is the dependent observational unit.
 
-### Availability
+## Data Availability
 
-**The dataset will be made publicly available via an open-access repository upon paper acceptance.** Please contact the corresponding author in the meantime.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20595139.svg)](https://doi.org/10.5281/zenodo.20595139)
+
+**Access the dataset here:** [https://doi.org/10.5281/zenodo.20595139](https://doi.org/10.5281/zenodo.20595139)
+
+### Reproducibility Note
+The high-fidelity brightfield microscopy dataset of *Candida albicans* and *Candida glabrata* is permanently archived and openly accessible via **Zenodo**.The repository houses the unadulterated raw TIFF acquisitions (61 slides). To precisely replicate the 60-slide experimental cohort, slide-level baseline metrics, and XAI manifold topologies reported in the paper, users must maintain strict biological isolation.
 
 ### Data Format
 
